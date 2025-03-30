@@ -506,9 +506,4 @@ CREATE TABLE Gallery (
     height INT NOT NULL,
     caption TEXT
 );
-use eve;
-ALTER TABLE Gallery ADD COLUMN userEmail VARCHAR(255) NOT NULL;
-select* from Gallery;
 
-
-ALTER TABLE Gallery DROP COLUMN userEmail;
