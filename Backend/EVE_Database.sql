@@ -1,4 +1,4 @@
-CREATE DATABASE EVE;
+
 
 USE EVE;
 
@@ -479,3 +479,31 @@ SELECT * FROM
  Information;
  SELECT * FROM
  Notifications;
+ 
+ UPDATE Information 
+SET 
+Event_Date_Time = "2025-02-27 12:00"
+
+WHERE Serial_Number = 6;
+
+
+CREATE TABLE IF NOT EXISTS memory (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    query TEXT,
+    response TEXT
+);
+CREATE TABLE Admins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL
+);
+INSERT INTO Admins (email) VALUES ('yashkhedekar31@gmail.com');
+
+CREATE TABLE Gallery (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url VARCHAR(255) NOT NULL,
+    thumbnailUrl VARCHAR(255) NOT NULL,
+    width INT NOT NULL,
+    height INT NOT NULL,
+    caption TEXT
+);
+
