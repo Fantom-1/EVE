@@ -1,0 +1,120 @@
+.BottomHalfClub{
+    padding: 0.2rem;
+    display: flex;
+    height: 91.9vh;
+}
+
+.ClubContent::before {
+    content: '';
+    display: block;
+    margin-top: 2rem;
+  }
+
+.ClubContent{
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+.ClubContent .clubCard {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255,255,255 0.6);   
+}
+
+.css-1qzevvg img{
+    filter: brightness(10);
+    z-index: 2000;
+}
+
+.cardContainer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}  
+
+.description{
+    position: absolute;
+    height: 18rem;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+    z-index: 0;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background-color: rgba(0,0,0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.18)
+}
+
+.cardContainer:hover .description{
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 2;
+}
+
+.cardContainer:hover .clubCard{
+    filter: brightness(70%);
+}
+
+.cardContainer:hover{
+    box-shadow: 0 3px 5px rgba(128, 118, 164, 0.3);
+
+}
+
+.description h4{
+    margin-bottom: 1.5rem;
+}
+
+.clubInfoBtn{
+    position: absolute;
+    bottom: 1rem;
+    left: 40%;
+}
+  
+
+@media(min-width: 822px) and (max-width: 900px){
+    .ClubContent{
+        transform: scale(0.9);
+    }
+}
+
+@media(min-width: 665px) and (max-width: 821px){
+    .ClubContent{
+        transform: scale(0.8);
+    }
+}
+
+@media(min-width: 482px) and (max-width: 664px){
+    .ClubContent{
+        transform: scale(0.7);
+    }
+}
+
+@media(min-width: 432px) and (max-width: 481px){
+    .ClubContent{
+        transform: scale(0.65);
+    }
+}
+
+@media(min-width: 352px) and (max-width: 431px){
+    .ClubContent{
+        transform: scale(0.6);
+    }
+}
+
+@media(max-width: 351px){
+    .ClubContent{
+        transform: scale(0.5);
+    }
+
+    .css-1qzevvg img{
+        transform: translateX(-80%);
+    }
+}
+
+

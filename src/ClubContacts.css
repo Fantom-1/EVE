@@ -1,0 +1,21 @@
+.ClubContacts{
+    padding: 0.5rem;
+    height: 7rem;
+    width: 12rem;
+    background-image: url("./assets/crisprbg.jpg") !important;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    margin-bottom: 0;
+    box-shadow: 2px 3px 6px rgba(7, 103, 82, 0.3);
+    border-radius: 1rem;
+
+}
+
+@media(max-width: 448px){
+    .ClubContacts{
+        height: 6rem;
+    }
+}
+

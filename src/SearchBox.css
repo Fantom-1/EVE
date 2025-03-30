@@ -1,0 +1,112 @@
+.search_bar{
+    width: 37.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin:0.7rem 5rem 0.7rem 0;
+    background-color: transparent;
+    color: white;
+}
+
+
+
+label i{
+    height: 2.5rem;
+    width: 3.2rem;
+    padding: 0.2rem 0 0 0.2rem;
+    border-radius: 2rem 0 0 2rem;
+    cursor: pointer;
+}
+
+.search_bar i{
+    color: white;
+    font-size: 130%;
+    background-color: transparent;
+    margin: 0.3rem 0 0 0.5rem;
+    position: relative;
+    right: 3.5rem;
+    background-color: transparent;
+}
+
+.search_bar input::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+  
+
+.search_bar input{
+    height: 2.5rem;
+    width: 100%;
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius:2rem;
+    text-align: center;
+    margin-right: 0.2rem;
+}
+
+@media(max-width: 1030px){
+    .search_bar{
+        position: relative;
+        width: 55vw;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin:0.7rem 5rem 0.7rem 0;
+        background-color: transparent;
+    }
+}
+
+@media(max-width: 600px){
+    form{
+        width: 2.5rem;
+        margin-left: 8rem;
+    }
+
+    .search_bar input{
+        display: none;
+    }
+
+    .search_bar{
+        width: 2rem;
+    }
+
+    label i{
+        display: inline-flex;
+        margin-right: -8rem;
+        padding-right: 5px;
+        color: white;
+        font-size: 130%;
+        background-color: #121212;
+        position: relative;
+        left:0;
+        background-color: transparent;
+    }
+
+    /* label i:hover{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        background-color: #242424;
+    } */
+}
+
+@media (max-width: 664px) {
+    .MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.avatar.css-18k2bs-MuiAvatar-root {
+      margin-left: 8px;
+    }
+}
+
+@media(min-width: 480px) and (max-width: 599px){
+    form{
+        width: 2.5rem;
+        margin-left: 15rem;
+    }
+}
+
+@media(max-width: 350px){
+    form{
+        width: 2.5rem;
+        margin-left: 8rem;
+    }
+}

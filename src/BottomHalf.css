@@ -1,0 +1,14 @@
+.BottomHalf{
+    padding: 0.2rem;
+    padding-right: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.Content{
+    flex: 1;
+    overflow: auto;
+}
+
+
+

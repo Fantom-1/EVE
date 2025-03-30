@@ -1,0 +1,82 @@
+.EventInfo{
+    background-color: transparent;
+    height: 91.9vh;
+    overflow-y: auto;
+    color: white;
+}
+
+.banner{
+    width: 100%;
+    height: max-content;
+}
+
+.eventContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.eventHead, .EventOrgs, .EveDetails{
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    height: fit-content;
+    width: 70%;
+    border: 3px solid white;
+    
+    
+}
+
+.eSummit_logo{
+    height: 6.5rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.eventName, .eveDet, .theme{
+    display: flex;
+}
+
+.eveHeadIcons{
+    margin-right: 0.7rem;
+}
+
+.aboutEvent{
+    margin-bottom: 1rem;
+}
+
+.theme{
+    flex-wrap: wrap;
+}
+
+.themeOpt{
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 1.2rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+}
+
+@media(max-width:670px){
+    .themeOpt{
+        margin-bottom: 1rem;
+    }
+
+    .banner{
+        height: 10rem;
+    }
+}
+
+
+@media(max-width:480px){
+    .eventHead, .EventOrgs, .EveDetails{
+        width: 90%;
+    }
+
+    
+}
+

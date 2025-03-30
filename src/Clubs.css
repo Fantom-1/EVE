@@ -1,0 +1,11 @@
+.Clubs{
+    background-image: url("./assets/bg9.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.NavBar{
+    position: sticky;
+    top: 0;
+}

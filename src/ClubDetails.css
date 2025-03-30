@@ -1,0 +1,33 @@
+.ClubDetails{
+    width: 100%;
+    height: 90.2vh;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.ClubDetails p{
+    font-size: 1.2rem;
+}
+
+.ClubDetailsPara{
+    margin: 0 4rem;
+}
+
+.clubEves{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.clubContacts{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+
+

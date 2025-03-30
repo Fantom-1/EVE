@@ -1,0 +1,75 @@
+.card{
+    background-color: rgba(0, 0, 0, 0.625);
+    text-align:center;
+    color: white;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    height: 25.2rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease ;
+    box-shadow: rgb(1, 1, 1);
+}
+
+.card:hover{
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8);
+   
+}
+
+.card-body{
+    padding: 0.4rem;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.card-title{
+    margin-bottom: 0.3rem;
+    
+}
+
+.card-title:hover{
+    font-weight: 700;
+}
+
+.card img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+
+}
+
+.card-body .btns{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    margin-top: 0.8rem;
+}
+
+.inCardIcons{
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.inCardIcons:hover{
+    cursor: pointer;
+}
+
+.shareIcon{
+    margin-right: -0rem;
+}
+
+.logo{
+    font-weight: 700;
+}
+
+
+.btns .btn{
+    border-width: 3px;
+    margin-bottom: 0.6rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    margin-left: 0.2rem;
+}

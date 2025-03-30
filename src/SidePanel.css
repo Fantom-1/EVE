@@ -1,0 +1,104 @@
+.SidePanel {
+    position: fixed;
+    height: 90vh; /* Fixed height for the side panel */
+    margin-right: 0.4rem;
+    border-radius: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    transition: transform 0.3s ease;
+    left: 0;
+    z-index: 1600;
+    padding-left: 1.5rem;
+    margin-top: 1rem; /* Slightly move it up */
+}
+
+.panel_options {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem; 
+    justify-self: flex-start;
+    color: white;
+    height: 2.5rem;
+    width: 12rem;
+    line-height: 2.4rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Ensures proper centering of text */
+}
+
+.panel_options:hover {
+    box-shadow: 3.5px 3.5px 7px rgba(128, 134, 138, 0.5);
+}
+
+.About {
+    margin-top: 14rem; /* Move About section up */
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.home {
+    align-self: baseline;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    line-height: normal;
+    justify-content: center;
+}
+
+.home h5 {
+    line-height: 2.5rem;
+}
+
+.home span {
+    background-color: transparent;
+}
+
+.home i {
+    color: white;
+    background-color: transparent;
+    margin-right: 0.5rem;
+}
+
+.a {
+    text-decoration: none !important;
+    color: white;
+    background-color: transparent;
+}
+
+h5 {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.SidePanel.visible {
+    transform: translateX(0);
+}
+
+.SidePanel.hidden {
+    display: none;
+}
+
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1500;
+}
+
+/* Media Query for smaller screens (mobile responsiveness) */
+@media (max-width: 768px) {
+    .SidePanel {
+        height: 100vh; /* Make side panel full height on smaller screens */
+        margin-top: 0.5rem; /* Adjust margin to fit on smaller screens */
+    }
+
+    .panel_options {
+        width: 10rem; /* Adjust the width of the panel links */
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .About {
+        margin-top: 11rem; /* Move About section up more for mobile */
+    }
+}

@@ -1,0 +1,66 @@
+
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.signupPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./assets/loginbg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logoInSignup {
+    max-width: 65%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.option p{
+    margin-bottom: 0;
+}
+
+.opt2 {
+    margin-left: 0.5rem;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.opt2:hover {
+    color: #0d6efd;
+}
+
+@media (max-width: 480px) {
+    .signupPage {
+        padding: 1rem;
+    }
+    
+    .logoInSignup {
+        max-width: 50%;
+    }
+}

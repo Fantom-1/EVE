@@ -1,0 +1,92 @@
+.navbar{
+    position: sticky !important;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.7rem;
+    padding-bottom: 1rem;
+    padding-top: 1.1rem;
+    z-index: 1500;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.3);
+}
+
+.menu_bar{
+    color: white;
+    background-color: transparent;
+    text-align: end;
+    font-size: 130%;
+    cursor: pointer;
+    margin-left: 0.4rem;
+    z-index: 1700;
+    margin-bottom: 0.1rem;
+}
+
+.menu_bar i{
+    background-color: transparent;
+    
+}
+
+.logoContainer{
+    position: relative;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.logoContainer img{
+    background-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.logo{
+    height: 3.5rem;  
+    margin-bottom: 0.2rem;
+}
+
+.SearchBox{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* margin-left: 10rem; */
+}
+
+.register{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.register .avatar{
+    display: none;
+    margin-left: 8px;
+    margin-right: 0.5rem;
+}
+
+.register .avatar:hover{
+    cursor: pointer;
+}
+
+.register a{
+    margin-right: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+@media(max-width: 920px){
+    .register .btn{
+        display: none;
+    }
+    
+    .register .avatar{
+        display: inherit;
+    }
+}
+
+@media(max-width: 600px){
+    .SearchBox{
+        width: 1rem !important;
+        /* padding-left: 10rem; */
+    }
+}
