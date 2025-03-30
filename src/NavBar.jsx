@@ -20,7 +20,7 @@ export default function NavBar({ toggleMenuBar }) {
         try {
           // Check if the user is an admin by calling the backend API
           const token = await currentUser.getIdToken();
-          const response = await fetch("http://localhost:5000/api/check-admin", {
+          const response = await fetch("http://192.168.77.84:3111/api/check-admin", {
             headers: { "Authorization": token }
           });
 

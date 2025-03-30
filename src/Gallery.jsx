@@ -19,7 +19,7 @@ export default function App() {
 
   const fetchImages = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/images");
+      const response = await axios.get("http://192.168.77.84:3111/api/images");
       const data = response.data;
 
       const formattedImages = data.map((item) => ({
@@ -55,7 +55,7 @@ export default function App() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/upload", {
+      const response = await axios.post("http://192.168.77.84:3111/api/upload", {
         url: newImageUrl,
         caption: newCaption,
       });

@@ -10,7 +10,7 @@ export default function Content() {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/events") 
+        fetch("http://192.168.77.84:3111/api/events") 
             .then(response => response.json())
             .then(data => setEvents(data))
             .catch(error => console.error("Error fetching events:", error));

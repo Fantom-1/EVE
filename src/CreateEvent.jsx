@@ -31,7 +31,7 @@ export default function CreateEvent() {
 
     try {
       const token = await user.getIdToken();
-      const response = await fetch("http://localhost:5000/api/events", {
+      const response = await fetch("http://192.168.77.84:3111/api/events", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
