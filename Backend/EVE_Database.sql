@@ -1,4 +1,4 @@
-CREATE DATABASE EVE;
+
 
 USE EVE;
 
