@@ -52,42 +52,47 @@ export default function Content() {
 
     return (
         <div className="main_content">
-            <div className="box1">
-                <h2>Upcoming Events...</h2>
-                <div className="cards">
-                    <Slider {...sliderSettings}>
-                        {upcomingEvents.map((event, index) => (
-                            <Card 
-                                key={index} 
-                                cardImg={event.Thumbnail_Link || "default_poster.jpg"}  
-                                cardTitle={event.Events || ""} 
-                                cardText={event.Teaser || ""} 
-                                className="sliderCard" 
-                                moreInfoLink={event.MoreInfo_Link || "#"} 
-                                registerLink={event.Registration_Link || "#"}
-                            />
-                        ))}
-                    </Slider>
+            {upcomingEvents.length > 0 && (
+                <div className="box1">
+                    <h2>Upcoming Events...</h2>
+                    <div className="cards">
+                        <Slider {...sliderSettings}>
+                            {upcomingEvents.map((event, index) => (
+                                <Card 
+                                    key={index} 
+                                    cardImg={event.Thumbnail_Link || "default_poster.jpg"}  
+                                    cardTitle={event.Events || ""} 
+                                    cardText={event.Teaser || ""} 
+                                    className="sliderCard" 
+                                    moreInfoLink={event.MoreInfo_Link || "#"} 
+                                    registerLink={event.Registration_Link || "#"}
+                                />
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
-            </div>
-            <div className="box1">
-                <h2>Recent Events...</h2>
-                <div className="cards">
-                    <Slider {...sliderSettings}>
-                        {recentEvents.map((event, index) => (
-                            <Card 
-                                key={index} 
-                                cardImg={event.Thumbnail_Link || "default_poster.jpg"}  
-                                cardTitle={event.Events || ""} 
-                                cardText={event.Teaser || ""} 
-                                className="sliderCard" 
-                                moreInfoLink={event.MoreInfo_Link || "#"} 
-                                registerLink={event.Registration_Link || "#"}
-                            />
-                        ))}
-                    </Slider>
+            )}
+
+            {recentEvents.length > 0 && (
+                <div className="box1">
+                    <h2>Recent Events...</h2>
+                    <div className="cards">
+                        <Slider {...sliderSettings}>
+                            {recentEvents.map((event, index) => (
+                                <Card 
+                                    key={index} 
+                                    cardImg={event.Thumbnail_Link || "default_poster.jpg"}  
+                                    cardTitle={event.Events || ""} 
+                                    cardText={event.Teaser || ""} 
+                                    className="sliderCard" 
+                                    moreInfoLink={event.MoreInfo_Link || "#"} 
+                                    registerLink={event.Registration_Link || "#"}
+                                />
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 }
