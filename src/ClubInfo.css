@@ -1,6 +1,31 @@
-.ClubInfo{
-    background-image: url("./assets/crisprbg.jpg") !important;
+.ClubInfo {
+    position: relative; 
+    min-height: 300px;
+    color: white; 
+    overflow: hidden; 
+    
+  }
+  
+  .ClubInfo::before {
+    content: "";
+    background-image: url("./assets/clubBg2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+    
+    filter: blur(8px) brightness(0.7);
+    -webkit-filter: blur(8px) brightness(0.7); 
+    
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: 0; 
+  }
+  
+ 
+  .BottomHalfClubInfo {
+    position: relative; 
+    z-index: 1; 
+  }

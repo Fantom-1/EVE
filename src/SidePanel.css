@@ -3,27 +3,30 @@
     height: 90vh; /* Fixed height for the side panel */
     margin-right: 0.4rem;
     border-radius: 0.5rem;
-    padding-right: 1.5rem;
+    padding-right: 1rem;
     padding-bottom: 1rem;
     transition: transform 0.3s ease;
     left: 0;
     z-index: 1600;
     padding-left: 1.5rem;
-    margin-top: 1rem; /* Slightly move it up */
+    /* margin-top: 1rem; Slightly move it up */
+    background-color: #121212;
+    
 }
 
 .panel_options {
     margin-top: 1.5rem;
-    margin-left: 1.5rem; 
+    /* margin-left: 0.7rem;  */
     justify-self: flex-start;
     color: white;
     height: 2.5rem;
     width: 12rem;
     line-height: 2.4rem;
     border-radius: 0.5rem;
-    text-align: center;
+    /* text-align: center !important; */
     display: flex;
     align-items: center; /* Ensures proper centering of text */
+    justify-content: center;
 }
 
 .panel_options:hover {
@@ -31,10 +34,10 @@
 }
 
 .About {
-    margin-top: 14rem; /* Move About section up */
+    margin-top: 16rem; /* Move About section up */
     font-weight: bold;
     font-size: 1.5rem;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
 }
 
 .home {

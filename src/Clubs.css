@@ -3,9 +3,41 @@
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+
+footer{
+  text-align: center;
 }
 
 .NavBar{
     position: sticky;
     top: 0;
 }
+
+.Clubs {
+    position: relative; 
+    min-height: 300px;
+    color: white; 
+    overflow: hidden; 
+    
+  }
+  
+  .Clubs::before {
+    content: "";
+    background-image: url("./assets/bg9.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    filter: blur(8px) brightness(0.7);
+    -webkit-filter: blur(8px) brightness(0.7); 
+    
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: 0; 
+  }
+  

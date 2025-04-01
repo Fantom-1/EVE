@@ -10,7 +10,7 @@ import Signup from "./Signup.jsx";
 import Clubs from "./Clubs.jsx";
 import CreateEvent from "./CreateEvent";
 import CampusPulse from './CampusPulse';
-import AllEvents from './AllEvents.jsx';
+import Events from './Events.jsx';
 
 import "./App.css";
 import { DNA } from "react-loader-spinner";
@@ -64,11 +64,12 @@ function App() {
             <Route path="/clubs/crispr-info" element={<ClubInfo />} />
             <Route path="/campuspulse" element={<CampusPulse />} />
             <Route path="/create-event" element={<ProtectedRoute><CreateEvent /></ProtectedRoute>} />
-            <Route path="/AllEvents" element={<AllEvents />} />
+            <Route path="/Events" element={<Events />} />
           </Routes>
         </Router>
       )}
       </div>
+      
     </>
   );
 }

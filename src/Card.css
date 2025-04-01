@@ -45,7 +45,10 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    margin-top: 0.8rem;
+    margin-left: 0.7rem;
+    position: fixed;
+    bottom: 1.5rem;
+    
 }
 
 .inCardIcons{
@@ -57,9 +60,9 @@
     cursor: pointer;
 }
 
-.shareIcon{
+/* .shareIcon{
     margin-right: -0rem;
-}
+} */
 
 .logo{
     font-weight: 700;
@@ -73,3 +76,16 @@
     font-weight: 500;
     margin-left: 0.2rem;
 }
+
+.card-body .btns {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    margin-left: 0;
+    position: absolute; 
+    bottom: 1rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 90%; 
+}
+

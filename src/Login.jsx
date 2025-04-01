@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import logo from "./assets/logo.png";
-import loginbg2 from "./assets/loginbg2.jpg";
+import clubBg from "./assets/clubBg.jpg";
 import React, { useState } from "react";
 import { auth } from "./firebase/firebaseConfig";
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
@@ -67,10 +67,6 @@ export default function Login() {
           marginTop: "5%",
           height: "35rem",
           width: "30rem",
-          backgroundImage: `url(${loginbg2})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
           backdropFilter: "blur(8px)",
           boxShadow: "0 2px 10px 0 rgba(153, 154, 169, 0.37)",
           background: "rgba(255, 255, 255, 0.02)",
@@ -154,11 +150,7 @@ export default function Login() {
             Forgot your password?
           </Link>
         </div>
-        <div className="option">
-          <Typography variant="body2" sx={{ color: "white" }}>
-            Don't have an account? <Link to="/signup" className="opt2 a">Sign up here</Link>
-          </Typography>
-        </div>
+        
       </Box>
     </div>
   );

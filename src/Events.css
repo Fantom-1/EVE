@@ -1,4 +1,4 @@
-.Home {
+.Events {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -47,7 +47,7 @@
 }
 
 
-.NavBar, .BottomHalf {
+.NavBar, .BottomHalfEvents {
     position: relative;
     z-index: 2; 
     width: 100%;

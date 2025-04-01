@@ -20,6 +20,9 @@ export default function Clubs(){
             <div className="BottomHalfClub" style={{overflow: "hidden"}}>
                 <BottomHalfClub menuBar={menuBar}/>
             </div>
+            <footer>
+                <p> &copy; 2025 Powered by <b>CRISPR</b></p>
+            </footer>
             
         </div>
     )

@@ -1,0 +1,12 @@
+.Eventscards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 5%;
+    gap: 5rem;
+    
+}
+
+.EventsHead{
+    text-align: center;
+}

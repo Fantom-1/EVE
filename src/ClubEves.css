@@ -1,18 +1,26 @@
 .ClubEves{
     height: 15rem;
     width: 25rem;
-    background-image: url("./assets/crisprbg.jpg") !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 0.5rem;
     margin: 2rem;
     margin-top: 0;
-    box-shadow: 2px 3px 6px rgba(7, 103, 82, 0.3);
+    
+    border: 2px solid rgb(69, 69, 69);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    transform: scale(1);
+    
+}
+
+.ClubEves:hover{
+    box-shadow: 2px 1px 7px rgba(128, 134, 138, 0.5);
+    transform: scale(1.1);
+    transition:all 5 ease-in-out;
 }
 
 .ClubEves p{
     font-size: 1.1rem;
+    
 }
 
 @media(min-width: 379px) and (max-width: 441px){

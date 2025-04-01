@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import BottomHalf from "./BottomHalf";
+import BottomHalfEvents from "./BottomHalfEvents";
 import NavBar from "./NavBar";
-import "./Home.css";
+import "./Events.css";
 
-export default function Home() {
+export default function Events() {
     const [menuBar, setMenuBar] = useState(false);
 
     const toggleMenuBar = () => {
@@ -11,7 +11,7 @@ export default function Home() {
     };
 
     return (
-        <div className="Home">
+        <div className="Events">
            
             <div className="particle-container">
                 {Array.from({ length: 30 }).map((_, index) => (
@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             <NavBar toggleMenuBar={toggleMenuBar} />
-            <BottomHalf menuBar={menuBar} />
+            <BottomHalfEvents menuBar={menuBar} />
             <footer>
                 <p> &copy; 2025 Powered by <b>CRISPR</b></p>
             </footer>
